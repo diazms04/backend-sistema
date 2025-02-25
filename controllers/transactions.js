@@ -1,5 +1,7 @@
 const Transaction = require("../models/transactions");
 
+
+// Metodo post para transacciones
 const createTransaction = async (req, res) => {
   try {
     const { user_id, amount, type } = req.body;
@@ -14,6 +16,8 @@ const createTransaction = async (req, res) => {
   }
 };
 
+
+// Metodo get para transacciones
 const getTransactionsByUser = async (req, res) => {
   try {
     const { user_id } = req.params;
