@@ -16,7 +16,7 @@ CREATE DATABASE system;
 ```
 
 Para correrlo en una base de datos local puede descomentar el codigo que se encuentra en `db.js`:
-Y configura las variables con sus datos, 
+Y configura las variables con sus datos:
 
 ```
 const { Pool } = require("pg");
@@ -32,7 +32,7 @@ const pool = new Pool({
 module.exports = pool;
 
 ```
-Y tiene que comentar el siguiente codigo:
+Luego se tiene que comentar el siguiente codigo:
 ```
 const { Pool } = require("pg");
 
