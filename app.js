@@ -7,7 +7,7 @@ const transactionRoutes = require("./routes/transactions");
 
 // Habilitar CORS para permitir solicitudes desde Angular
 app.use(cors({
-  origin: "http://localhost:4200", // Permitir solo peticiones desde Angular
+  origin: ["http://localhost:4200", "https://sistemaproyecto.netlify.app"],
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type, Authorization"
 }));
